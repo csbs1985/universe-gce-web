@@ -108,5 +108,7 @@
       }
     }
   },
-  "defaultProject": "universe-gce-web"
+  "cli": {
+    "analytics": "b82bcbe7-c1c7-47f5-a09c-49a08f664056"
+  }
 }
