@@ -2,8 +2,10 @@
 
 /*settigns, tools, generic, base, objects, components e trumps*/
 @import "./settings/color";
+@import "./settings/size";
 
 @import "./tools/fonts";
 
+@import "./generic/h";
 @import "./generic/page";
 @import "./generic/reset";

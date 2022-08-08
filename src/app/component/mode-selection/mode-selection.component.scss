@@ -1,0 +1,22 @@
+.mode-section {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  gap: var(--size-large);
+  margin-top: var(--size-large);
+  max-width: var(--page-max-width);
+
+  div {
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    width: 33%;
+    padding: var(--size-large);
+    background-color: var(--placebo);
+
+    &:hover {
+      background-color: red;
+    }
+  }
+}

@@ -1,1 +1,5 @@
-<p>{{ "title" | translate }}</p>
+<section class="mode-section">
+  <div *ngFor="let item of cards; let i = index" (click)="selectMode(i)">
+    <h1>{{ item | translate }}</h1>
+  </div>
+</section>

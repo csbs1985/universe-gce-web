@@ -7,7 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mode-selection.component.scss'],
 })
 export class ModeSelectionComponent implements OnInit {
-  constructor(private translate: TranslateService) {}
+  public cards: Array<string> = [];
+
+  constructor(private translate: TranslateService) {
+    this.getListCards();
+  }
 
   ngOnInit(): void {}
+
+  private getListCards(): void {
+    this.cards.push(
+      this.translate.instant('card-follow'),
+      this.translate.instant('card-update'),
+      this.translate.instant('card-create')
+    );
+  }
+
+  public selectMode(item: number): void {
+    console.log(item);
+  }
 }
